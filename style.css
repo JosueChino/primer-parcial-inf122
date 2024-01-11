@@ -1,0 +1,79 @@
+:root {
+    --white: #FFFFFF;
+    --black: #0C151D;
+    --bacgraun: #2B2E34;
+    --blue: #141414;
+    --purple: #AFC0E2;
+    --light-purple: #D1AE31;
+    --red-heart: #A50954;
+    --blue-heart: #4CF58C;
+    --Aqua: #00C2FF;
+    --sm: 14px;
+    --md: 20px;
+    --lg: 60px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-container{
+    width: 1000px;
+    height: 1000px;
+    background-color: var(--black);
+    margin: 0.5em auto;
+    padding: 0.5em;
+}
+
+body {
+    font-family: 'Nunito';
+    margin: 0;
+    background-color: var(--black);
+}
+.contenedorvictor{
+    background-color: --var(--blue-heart);
+   display: flex;
+    width: 631px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.datos{
+    height: 10vh;
+    width: 100%;
+    margin: 0.5em auto;
+    background-color: red;
+}
+.descargas{
+    height: 10vh;
+    width: 100%;
+    margin: 0.5em auto;
+    background-color: red
+}
+.postafolio{
+    height: 10vh;
+    width: 100%;
+    margin: 0.5em auto;
+    background-color: red
+}
+
+
+.contenedorgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    place-content: center;
+}
+
+.caja {
+    width: 90%;
+    height: 90px;
+    background-color: green;
+}
+
+@media (max-width: 600px) {
+    .contenedorgrid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
